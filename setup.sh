@@ -18,4 +18,7 @@ npm install --save-dev webpack-merge
 # Install CSS Loader and Style Loader
 npm install css-loader style-loader --save-dev
 
+# Install Sass Loader
+npm install sass-loader sass webpack --save-dev
+
 echo "All dependencies have been installed. Your project is ready to use Webpack."

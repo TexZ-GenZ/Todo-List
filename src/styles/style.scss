@@ -1,0 +1,10 @@
+@import "./scss_components/reset";
+@import "./scss_components/sidebar";
+@import "./scss_components/content";
+
+body {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
