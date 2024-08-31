@@ -1,10 +1,4 @@
-import './styles/style.css';
-import write from './js_components/writeDom';
-import dom from './js_components/dom'
+import './styles/style.scss';
+import { initializeDom } from './js_components/dom.js';
 
-
-dom.addTodo.forEach((btn)=>{
-    btn.addEventListener('click',()=>{
-        write.addList();
-    })
-})
+document.addEventListener('DOMContentLoaded', initializeDom);

@@ -1,57 +1,81 @@
-.sidebar {
-  border-right: 1px solid black;
-  .appName {
-    text-align: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid black;
-  }
+#sidebar {
+  width: 250px;
+  background-color: #fafafa;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 
-  .controls {
-    border-bottom: 1px solid black;
-    ul {
-      list-style-type: none;
-      padding: 1rem 0;
-      button {
-        background-color: transparent;
-        border: 0;
-        width: 100%;
-        &:hover {
-          background-color: rgb(202, 200, 200);
-        }
-      }
-    }
-  }
-
-  .projheading {
-    display: flex;
-    padding: 1rem;
-    gap: 7px;
-    border-bottom: 1px solid black;
-    h1{
-        white-space: nowrap;
-    }
-    button {
+  .user-info {
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 0;
-      height: fit-content;
-      font-size: 2.5rem;
-      align-self: center;
-      height: 2.5rem;
-      width: 2.5rem;
-      border-radius: 50%;
-      border: 0;
-      background-color: transparent;
-      color: rgb(188, 188, 188);
+      margin-bottom: 20px;
 
-      &:hover {
-        color: rgb(133, 132, 132);
+      .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
       }
-      &:active {
-        color: rgb(85, 85, 85);
-        scale: 0.98;
+  }
+
+  .add-task {
+      background-color: #db4c3f;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+
+  .search-bar {
+      position: relative;
+      margin-bottom: 20px;
+
+      input {
+          width: 100%;
+          padding: 10px 10px 10px 30px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
       }
-    }
+
+      i {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #777;
+      }
+  }
+
+  nav ul {
+      list-style-type: none;
+
+      li {
+          padding: 10px;
+          cursor: pointer;
+
+          &.active {
+              background-color: #eeeeee;
+              border-radius: 5px;
+          }
+
+          i {
+              margin-right: 10px;
+          }
+      }
+  }
+
+  .projects h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+
+  .templates {
+      margin-top: auto;
+      padding: 10px;
+      cursor: pointer;
   }
 }
